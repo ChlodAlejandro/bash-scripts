@@ -7,16 +7,21 @@ Convert any video file into a .GIF file.
 * ffmpeg (Tested on `3.2.12-1`)
 
 ## Usage
-1. Add execution permissions
+
+**By default, you are using `gif-ify.balanced.sh`. If you wish to have a better quality of GIF, you need to download a different type (`gif-ify.uhd.sh`, for example) then rename it to `gif-ify.sh`. You may also choose not to do this, if you're satisfied with the quality of GIFs the balanced version outputs.**
+
+*Also, `gif-ify.all.sh` is for testing purposes only. This generates .GIFs for every stock quality level.*
+
+1. Add execution permissions if you haven't already.
 ```sh
 $ chmod +x gif-ify.sh
 ```
-2. Execute `gif-ify.sh`
+2. Execute `gif-ify.sh`.
 ```sh
 $ ./gif-ify.sh
 ```
 
-## Expected output
+## Expected Output
 ```
 File > video.mkv
 Generating video palette...
@@ -25,3 +30,6 @@ Generated palette. Building .GIF...
 frame=  <?> fps= <?> q=-0.0 Lsize=      <?> time=<?>:<?>:<?>.<?> bitrate=   <?>kbits/s speed= <?>x
 Done.
 ```
+
+## Developer Notes
+You can create your own quality presets by duplicating the `gif-ify.sh` file and replacing the `FPS` and `SCALE` variables.
