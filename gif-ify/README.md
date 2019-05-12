@@ -8,7 +8,7 @@ Convert any video file into a .GIF file.
 
 ## Usage
 1. Add execution permissions
-...```sh
+```sh
 chmod +x gif-ify.sh
 ```
 2. Execute `gif-ify.sh`
